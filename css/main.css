@@ -1,0 +1,154 @@
+* {
+	box-sizing: border-box;
+}
+
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+	margin: 0
+}
+
+img {
+	vertical-align: middle;
+	object-fit: cover
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	overflow: hidden;
+	border: 0;
+	clip: rect(0 0 0 0)
+}
+
+.tel__box {
+	position: relative;
+	text-align: center;
+	padding: 35px 0 0
+}
+
+.tel__box::after {
+    content: "";
+	position: absolute;
+	top: 27px;
+	left: calc(50% - 160px);
+	display: inline-block;
+	width: 320px;
+	height: 565px;
+	background-image: url("../img/tel.png");
+	background-repeat: no-repeat;
+	background-size: 320px 565px;
+	z-index: -1;
+}
+
+.tel__content {
+	display: inline-block;
+	width: 305px;
+	height: 550px;
+	padding: 45px 20px 40px;
+	border-radius: 35px;
+	box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.15);
+}
+
+.tel__content::after {
+    content: "";
+	position: absolute;
+	top: 30px;
+	left: calc(50% - 155px);
+	display: inline-block;
+	width: 310px;
+	height: 560px;
+	background-image: url("../img/img-back.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	border-radius: 40px;
+	z-index: -2;
+}
+
+.tel__title {
+	margin: 0;
+	margin-bottom: 25px;
+	font-size: 16px;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 10px;
+	text-align: center;
+	color: #fff;
+}
+
+.tel__content-img {
+	margin-bottom: 45px;
+}
+
+.tel__sub__content {
+	text-align: start;
+	padding: 0 5px 0;
+}
+
+.tel__item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 260px;
+	margin-bottom: 30px;
+}
+
+.tel__icon {
+	margin-right: 15px;
+}
+
+.tel__sub__content-title {
+	margin: 0;
+	font-weight: 900;
+	font-size: 14px;
+	line-height: 17px;
+	color: #000;
+}
+
+.tel__sub__content-info {
+	margin: 0;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 17px;
+	color: #a7aaab;
+}
+
+.tel__checkbox-input:checked~.tel__checkbox-box {
+	background-color: #4a7df3;
+}
+
+.tel__checkbox-input:checked~.tel__checkbox-box>.checkbox__box {
+	transform: translateX(22px);
+}
+
+.tel__checkbox-box {
+	display: block;
+	width: 50px;
+	height: 30px;
+	margin-left: auto;
+	padding: 1.5px 1.5px 1.5px 0;
+	background-color: #fff;
+	border: 1px solid #d9d9d9;
+	border-radius: 30px;
+	transition: all 0.5s ease-in-out;
+}
+
+.checkbox__box {
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	background-color: #fff;
+	border: 1px solid #d9d9d9;
+	border-radius: 50%;
+	transition: all 0.5s ease-in-out;
+}
+
+.btn {
+	display: block;
+}

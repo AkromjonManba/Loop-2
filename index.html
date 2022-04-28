@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Loop 2 - Step 8</title>
+  <link rel="stylesheet" href="./css/normalize.css">
+  <!-- <link rel="stylesheet" href="./css/main.css"/> -->
+  <link rel="stylesheet" href="./css/main.min.css">
+</head>
+<body>
+  <form class="tel__box" action="https://echo.htmlacademy.ru/" method="POST">
+
+    <div class="tel__content">
+      <h1 class="tel__title">CARD</h1>
+      <img class="tel__content-img" src="./img/card.png" width="268" height="167" alt="">
+
+      <div class="tel__sub__content">
+        <div class="tel__item">
+          <img class="tel__icon" src="./img/lock.svg" width="20" height="20" alt="">
+          <div class="tel__content__item">
+            <p class="tel__sub__content-title">Lock card</p>
+            <p class="tel__sub__content-info">You can unlock it later</p>
+          </div>
+          <input class="tel__checkbox-input visually-hidden" id="switch" type="checkbox" name="lock_card">
+          <label class="tel__checkbox-box checkbox" for="switch">
+            <span class="checkbox__box"></span>
+          </label>
+        </div>
+        <div class="tel__item">
+          <img class="tel__icon" src="./img/plane.svg" width="20" height="20" alt="">
+          <div class="tel__content__item">
+            <p class="tel__sub__content-title">Payments abroad</p>
+            <p class="tel__sub__content-info">Enable your card abroad</p>
+          </div>
+          <input class="tel__checkbox-input visually-hidden" id="switch_two" type="checkbox" name="payments_abroad">
+          <label class="tel__checkbox-box checkbox" for="switch_two">
+            <span class="checkbox__box"></span>
+          </label>
+        </div>
+        <div class="tel__item">
+          <img class="tel__icon" src="./img/laptop.svg" width="20" height="20" alt="notebook picture icon">
+          <div class="tel__content__item">
+            <p class="tel__sub__content-title">Online payments</p>
+            <p class="tel__sub__content-info">Enable online transaktions</p>
+          </div>
+          <input class="tel__checkbox-input visually-hidden" id="switch_there" type="checkbox" name="online_payments">
+          <label class="tel__checkbox-box checkbox" for="switch_there">
+            <span class="checkbox__box"></span>
+          </label>
+        </div>
+        <div class="tel__item">
+          <img class="tel__icon" src="./img/atm.svg" width="20" height="20" alt="dollar picture icon">
+          <div class="tel__content__item">
+            <p class="tel__sub__content-title">ATM withdrawals</p>
+            <p class="tel__sub__content-info">Enable ATM withdrawals</p>
+          </div>
+          <input class="tel__checkbox-input visually-hidden" id="switch_four" type="checkbox" name="atm_withdrawals">
+          <label class="tel__checkbox-box checkbox" for="switch_four">
+            <span class="checkbox__box"></span>
+          </label>
+        </div>
+      </div>
+
+    </div>
+
+    <button class="btn visually-hidden" type="submit">Send</button>
+
+  </form>
+</body>
+</html>
